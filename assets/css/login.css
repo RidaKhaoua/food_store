@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.login {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login::before,
+.login::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+}
+
+.login::before {
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #ffbf57;
+    height: 100%;
+}
+
+.login::after {
+    bottom: 0;
+    left: 0;
+    background-color: rgb(253, 253, 253);
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+    height: 50%;
+    z-index: -1;
+}
+
+.login .container {
+    width: 342px;;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 6px;
+    background-color: white;
+    padding: 20px 40px;
+}
+
+@media (max-width:771px) {
+    .login .container {
+        width: 320px;
+    }
+}
+ 
+.login .container .image {
+    width: 200px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.login .container .image img {
+    max-width: 100%;
+}
+
+.login .container  .title {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.login .container form {
+    width: 100%;
+}
+
+.login .container form > div {
+    margin-bottom: 30px;
+}
+
+.login .container form input:not([type="submit"]) {
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding: 8px 0;
+}
+
+.login .container form input::placeholder {
+    color: #ccc;
+}
+
+
+.login .container form .forgot-password {
+    text-align: right;
+    text-transform: capitalize;
+    font-size: 0.80em;
+}
+
+.login .container form .forgot-password a {
+    color: #ffbf57;
+}
+
+.login .container form .btn-login {
+    display: block;
+    width: 200px;
+    margin: auto;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #ffbf57;
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+.login .container form .btn-login:hover {
+    background-color: #ffbf57bc;
+}
