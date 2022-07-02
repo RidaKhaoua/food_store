@@ -109,7 +109,7 @@ closeStory.addEventListener("click", () => {
 
 window.addEventListener("scroll", function () {
     // footer
-    if(this.scrollY >= footer.offsetTop - 251) {
+    if(this.scrollY >= footer.offsetTop - 300) {
         subscribe.classList.add("active");
     } else if (this.scrollY >= contact.offsetTop) { // contact
       infosInContact.classList.add("active");

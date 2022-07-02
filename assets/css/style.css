@@ -205,6 +205,7 @@ header .container nav ul li a {
     color: var(--main-color);
     position: relative;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 header .container nav ul li a.active {
@@ -374,7 +375,7 @@ header .container nav ul li a:hover::before {
 
 .show-story .image form input {
     background-color: transparent;
-    border: 2px solid black;
+    border: 2px solid white;
     padding: 8px 10px;
     border-radius: 50px;
     width: 85%;
@@ -389,8 +390,10 @@ header .container nav ul li a:hover::before {
 }
 
 .show-story .image form i {
-    font-size: 1.5em;
+    font-size: 1.1em;
     cursor: pointer;
+    color: white;
+    margin-left: 8px;
 }
 /* end show storys */
 
@@ -707,7 +710,7 @@ header .container nav ul li a:hover::before {
 @media (max-width:771px) {
     .contact .container  .infos {
         width: 100%;
-        transform: translateX(0%);
+        transform: translateX(0%) !important;
     }
 }
 
